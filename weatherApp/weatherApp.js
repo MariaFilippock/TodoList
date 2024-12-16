@@ -182,7 +182,6 @@ function loadWeatherOfCity(cityName) {
             state.error = 'Ошибка! Введите корректное название города.';
             return new Error(state.error);
         } else {
-            console.log(responseData);
             updateCityState(responseData, cityName);
             state.error = '';
         }
